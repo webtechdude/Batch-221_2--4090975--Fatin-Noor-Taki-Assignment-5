@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'myFont';
+    src: url('../fonts/Anek_Gujarati/AnekGujarati-VariableFont_wdth\,wght.ttf');
+}
+
+@font-face {
+    font-family: 'myMonoFont';
+    src: url('../fonts/Nova_Mono/NovaMono-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, rgb(63, 63, 63), rgb(59, 59, 80), rgb(24, 24, 41), rgb(15, 16, 18)) center/cover no-repeat;
+}
+
+nav {
+    position: sticky;
+    top: 5px;
+    font-family: myFont;
+    background-color: rgba(75, 75, 75, 0.5);
+    margin: 20px auto;
+    padding: 10px 0;
+    width: 50vw;
+    border-radius: 50px;
+    box-shadow: 0 0 40px 5px black;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(226, 226, 226);
+    font-size: 25px;
+    padding: 6px;
+    transition: color 0.5s;
+}
+
+nav a:hover {
+    color: rgb(182, 182, 182);
+    text-shadow: 0 0 5px black;
+}
+
+
+
+.heading {
+    min-height: auto;
+    border: 3px solid rgb(24, 24, 24);
+    border-radius: 30px;
+    width: 80vw;
+    background-image: linear-gradient(45deg, #373752, #5d5db3, #0d0d68);
+    margin: 0 auto;
+}
+
+
+.heading h1 {
+    font-family: myFont;
+    text-align: center;
+}
+
+h1 span {
+    font-family: myMonoFont;
+}
+
+
+.image-position {
+    margin: 30px auto;
+    border: 2px solid blueviolet;
+    height: calc(60vw - 300px);
+    width: 70vw;
+    border-radius: 10px;
+    background: url('../images/file_example_JPG_1MB.jpg');
+    background-color: rgb(143, 255, 221);
+    background-size: 300px;
+    background-repeat: no-repeat;
+}
+
+.image-position .position-text {
+    display: inline-block;
+    font-family: myFont;
+    font-size: 2em;
+    position: relative;
+    top: 45%;
+    left: 43%;
+    text-transform: uppercase;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    cursor: default;
+
+}
+.image-position .position-text:hover {
+    padding-left: 30px;
+    padding-right: 20px;
+    transform: translateX(-30px);
+}
+
+
+#left-top {
+    background-position: left top;
+}
+
+#left-center {
+    background-position: left center;
+}
+
+#left-bottom {
+    background-position: left bottom;
+}
+
+#right-top {
+    background-position: right top;
+}
+
+#right-center {
+    background-position: right center;
+}
+
+#right-bottom {
+    background-position: right bottom;
+}
+
+#center-top {
+    background-position: center top;
+}
+
+#center-bottom {
+    background-position: center bottom;
+}
+
+#center {
+    background-position: center;
+}
