@@ -22,9 +22,9 @@ nav {
     top: 5px;
     font-family: myFont;
     background-color: rgba(75, 75, 75, 0.5);
-    margin: 20px auto;
-    padding: 10px 0;
-    width: 50vw;
+    margin-inline: auto;
+    padding: 10px;
+    width: 75vw;
     border-radius: 50px;
     box-shadow: 0 0 40px 5px black;
 }
@@ -55,12 +55,13 @@ nav a:hover {
     border-radius: 30px;
     width: 80vw;
     background-image: linear-gradient(45deg, #373752, #5d5db3, #0d0d68);
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 
 .heading h1 {
     font-family: myFont;
+    font-size: min(40px, 6vw);
     text-align: center;
 }
 
@@ -72,22 +73,22 @@ h1 span {
 .image-position {
     margin: 30px auto;
     border: 2px solid blueviolet;
-    height: 500px;
+    height: min(90vh, 40vmax);
     width: 80vw;
     border-radius: 10px;
     background: url('../images/file_example_JPG_1MB.jpg');
     background-color: rgb(143, 255, 221);
-    background-size: 30% auto;
+    background-size: min(50vw, 300px) auto;
     background-repeat: no-repeat;
 }
 
 .image-position .position-text {
     display: inline-block;
     font-family: myFont;
-    font-size: 2em;
+    font-size: clamp(4vw, 3vw, 4vw);
     position: relative;
     top: 45%;
-    left: 43%;
+    left: 40%;
     text-transform: uppercase;
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     border-radius: 5px;
