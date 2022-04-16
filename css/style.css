@@ -72,12 +72,12 @@ h1 span {
 .image-position {
     margin: 30px auto;
     border: 2px solid blueviolet;
-    height: calc(60vw - 300px);
-    width: 70vw;
+    height: 500px;
+    width: 80vw;
     border-radius: 10px;
     background: url('../images/file_example_JPG_1MB.jpg');
     background-color: rgb(143, 255, 221);
-    background-size: 300px;
+    background-size: 30% auto;
     background-repeat: no-repeat;
 }
 
